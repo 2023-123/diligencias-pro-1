@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background: #f2f4fa;
+}
+
+body {
+  color: #101828;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  outline: none;
+}
+
+input,
+textarea,
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::placeholder {
+  color: #94a3b8;
+}
+
+input[type="file"] {
+  width: 100%;
+  font-size: 14px;
+  color: #334155;
+  background: #fff;
+  border: 1px solid #dbe2f0;
+  border-radius: 14px;
+  padding: 10px 12px;
+}
+
+input[type="file"]::file-selector-button {
+  border: none;
+  background: #3153da;
+  color: #fff;
+  padding: 9px 12px;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  border: none;
+  background: #3153da;
+  color: #fff;
+  padding: 9px 12px;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+textarea {
+  resize: vertical;
+}
+
+@media (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+}
